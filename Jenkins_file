@@ -1,0 +1,31 @@
+pipeline {
+    agent any
+
+    stages {
+        stage('Dev Pipe') {
+            steps {
+                echo 'In Dev pipe'
+            }
+        }
+        stage('Build Pipe') {
+            steps {
+                echo 'In Build pipe'
+            }
+        }    
+        stage('Test Pipe') {
+            steps {
+                echo 'In test pipe'
+            }
+        }    
+        stage('QA Pipe') {
+            steps {
+                echo 'In QA pipe'
+            }
+        }    
+        stage('Release Pipe') {
+            steps {
+                echo 'In Release pipe'
+            }    
+        }
+    }
+}
